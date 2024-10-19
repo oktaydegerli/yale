@@ -4,7 +4,7 @@ from homeassistant.const import Platform
 
 DEFAULT_TIMEOUT = 25
 
-CONF_ACCESS_TOKEN_CACHE_FILE = "access_token_cache_file_custom"
+CONF_ACCESS_TOKEN_CACHE_FILE = "access_token_cache_file"
 CONF_BRAND = "brand"
 CONF_LOGIN_METHOD = "login_method"
 CONF_INSTALL_ID = "install_id"
@@ -13,8 +13,8 @@ VERIFICATION_CODE_KEY = "verification_code"
 
 MANUFACTURER = "Yale Home Inc."
 
-DEFAULT_NAME = "Yale Custom"
-DOMAIN = "yale_custom"
+DEFAULT_NAME = "Yale"
+DOMAIN = "yale"
 
 OPERATION_METHOD_AUTORELOCK = "autorelock"
 OPERATION_METHOD_REMOTE = "remote"
