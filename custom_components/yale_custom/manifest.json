@@ -1,0 +1,17 @@
+{
+  "domain": "yale_custom",
+  "name": "Yale Custom",
+  "version": "0.0.1",
+  "codeowners": ["@oktaydegerli"],
+  "config_flow": true,
+  "dependencies": ["application_credentials", "cloud"],
+  "dhcp": [
+    {
+      "hostname": "yale-connect-plus",
+      "macaddress": "00177A*"
+    }
+  ],
+  "iot_class": "cloud_push",
+  "loggers": ["socketio", "engineio", "yalexs"],
+  "requirements": ["yalexs==8.10.0", "yalexs-ble==2.5.0"]
+}
