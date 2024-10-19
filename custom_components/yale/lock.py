@@ -45,8 +45,8 @@ class YaleLock(YaleEntity, RestoreEntity, LockEntity):
     def __init__(self, data: YaleData, device: Lock) -> None:
         """Initialize the lock."""
         super().__init__(data, device, "lock")
-        if self._detail.unlatch_supported:
-            self._attr_supported_features = LockEntityFeature.OPEN
+        #if self._detail.unlatch_supported:
+        self._attr_supported_features = LockEntityFeature.OPEN
 
     async def async_lock(self, **kwargs: Any) -> None:
         """Lock the device."""
